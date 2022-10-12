@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "TopSecret";
+    src: url("./docs/fonts/TopSecret.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* background-image: url(./docs/images/background.jpg); */
+    background-color: black;
+    background-size: cover ;
+}
+
+h1, p {
+    color: red;
+}
+
+h1, button {
+    font-family: 'TopSecret';
+}
+
+#all {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#textAndButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#toWrite {
+    width: 100%;
+    min-width: 300px;
+}
+
+textarea {
+    background-color: red;
+    color: black;
+}
+
+textarea::placeholder {
+    color: black;
+}
+
+#buttons {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+}
+
+button {
+    width: 30%;
+    height: 30px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: black;
+    color: red;
+}
+
