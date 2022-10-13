@@ -56,6 +56,10 @@ textarea::placeholder {
     padding-top: 10%;
 }
 
+#cpbutton {
+    width: 5000px;
+}
+
 button {
     width: 30%;
     height: 30px;
