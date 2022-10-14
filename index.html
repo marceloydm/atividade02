@@ -9,30 +9,57 @@
 </head>
 <body>
         <div id="all">
-            <h1>Conte um segredo
-            </h1>
-            <div id="textAndButtons">
-                <div id="text">
-                    <textarea id="toWrite" placeholder="Escreva aqui para criptografar ou descriptografar!"></textarea>
-                </div>
-                <div class="button" id="buttonsC">
-                    <button id="toCript64" onclick="b64()">Base 64</button>
-                    
-                    <button id="toCriptCC" onclick="">Cifra de César</button>
-                </div>
-                <div class="button" id="buttonsU">
-                    <button id="toUncript64" onclick="db64()">Desvendar B64</button>
 
-                    <button id="toUncriptCC" onclick="">Desvendar C$C</button>
+            <h1>Conte um segredo</h1>
+
+            <div id="textAndButtons">
+
+                <div id="tandl">
+
+                    <div id="label">
+
+                        <input type="radio" onclick="show()">
+                        <label>Cifra de César</label>
+                        <input type="radio" onclick="hide()">
+                        <label>Base64</label>
+
+                    </div>
+                    <br>
+                    <div id="text">
+
+                        <input type="number" id="nModificador" placeholder="Modificador C$C"><br>
+                        <textarea id="toWrite" placeholder="Escreva aqui para criptografar ou descriptografar!"></textarea>
+                    
+                    </div>
+
                 </div>
+
+                <div class="button" id="buttonsC">
+
+                    <button id="botaozinho" id="toCript64" onclick="b64()">Base 64</button>
+                    <button class="botaozinho" id="toUncript64" onclick="db64()">Desvendar B64</button>
+
+                </div>
+
+                <div class="button" id="buttonsU">
+
+                    <button id="toCriptCC" onclick="">Cifra de César</button>
+                    <button id="toUncriptCC" onclick="">Desvendar C$C</button>
+
+                </div>
+
             </div>
     
             <div id="results">
-                <p id="final">O segredo!</p>
-                <button class="button" id=”cpbutton” onclick="copy()">CTRL + C</button>
-            </div>
-    
+
+                <textarea id="final" placeholder="O Segredo!"></textarea>
+                <button id=”cpbutton” onclick="copy()">CTRL + C</button>
+
+            </div> 
+
         </div>
+
+    <script src="./docs/js/inputchange.js"></script>
     <script src="./docs/js/cifrac.js"></script>
     <script src="./docs/js/cpbutton.js"></script>
     <script src="./docs/js/b64.js"></script>

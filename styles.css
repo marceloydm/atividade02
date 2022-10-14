@@ -7,16 +7,24 @@
 
 body {
     /* background-image: url(./docs/images/background.jpg); */
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     background-size: cover ;
 }
 
-h1, p {
+#all {
+    background-color: black;
+}
+
+h1, p, label {
     color: red;
 }
 
-h1, button {
+h1, button, label {
     font-family: 'TopSecret';
+}
+
+#tandl {
+    display: block;
 }
 
 #all {
@@ -34,17 +42,17 @@ h1, button {
     justify-content: center;
 }
 
-#toWrite {
+#toWrite, #nModificador {
     width: 100%;
     min-width: 300px;
 }
 
-textarea {
+textarea, #nModificador {
     background-color: red;
     color: black;
 }
 
-textarea::placeholder {
+textarea::placeholder, #nModificador::placeholder {
     color: black;
 }
 
@@ -56,8 +64,11 @@ textarea::placeholder {
     padding-top: 10%;
 }
 
-#cpbutton {
-    width: 5000px;
+#results {
+    display: flex;
+    max-width: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 button {

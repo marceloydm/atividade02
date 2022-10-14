@@ -7,7 +7,7 @@ function b64() {
     console.log(ttc)
     console.log(cripted)
 
-    final.innerHTML = cripted
+    document.getElementById("final").value = cripted;
 }
 
 function db64 () {
@@ -17,5 +17,6 @@ function db64 () {
     console.log(ttu)
     console.log(uncripted)
 
-    final.innerHTML = uncripted
+
+    document.getElementById("final").value = uncripted;
 }
