@@ -9,6 +9,8 @@ body {
     /* background-image: url(./docs/images/background.jpg); */
     background-color: rgb(255, 0, 0);
     background-size: cover ;
+    display: flex;
+    justify-content: center;
 }
 
 #all {
